@@ -46,6 +46,7 @@ body {
     height: 3000px;
     font-family: "Century Gothic", sans-serif;
 }
+
 .sticky-header {
     display: none;
     position: fixed;
@@ -53,8 +54,9 @@ body {
     background: #ffffff;
     z-index: 99999999999999;
     top: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
+
 nav {
     height: 100px;
 }
@@ -64,6 +66,7 @@ nav {
     margin: 0 auto;
     background: white;
 }
+
 nav img {
     margin-top: 18px;
 }
@@ -78,15 +81,18 @@ nav img {
     margin-right: 5px;
     color: black;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
 }
+
 .nav-item a:hover {
     color: royalblue;
 }
+
 .navbar .nav-item:hover .dropdown-menu {
     display: block;
 }
@@ -118,6 +124,7 @@ nav img {
 
 /* Button resets and style */
 .pulse-button {
+    font-family: monospace;
     margin: 15px auto;
     font-size: 20px;
     color: #ffffff;
@@ -126,6 +133,7 @@ nav img {
     padding: 15px 20px;
     border: 0 solid #000;
     background: #353535;
+    outline: none;
 }
 
 /* Initiate Auto-Pulse animations */
@@ -141,31 +149,34 @@ nav img {
 /* Continue animation and add shine on hover */
 .pulse-button:hover,
 .pulse-button:focus {
+    outline: none;
     animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in, hoverShine 200ms;
 }
 
 /* Declare border pulse animation */
 @keyframes borderPulse {
     0% {
-        box-shadow: inset 0 0 0 5px rgba(255, 255, 255,.4), 0 0 0 0 rgba(255,255,255,1);
+        box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .4), 0 0 0 0 rgba(255, 255, 255, 1);
     }
     100% {
-        box-shadow: inset 0 0 0 3px rgba(117, 117, 255,.2), 0 0 0 10px rgba(255,255,255,0);
+        box-shadow: inset 0 0 0 3px rgba(117, 117, 255, .2), 0 0 0 10px rgba(255, 255, 255, 0);
     }
 }
 
 /* Declare shine on hover animation */
 @keyframes hoverShine {
-    0%{
-        background-image: linear-gradient(135deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+    0% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
     }
-    50%{
-        background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+    50% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
     }
-    100%{
-        background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 100%);
+    100% {
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4) 100%);
     }
-} /* КНОПКА ВВЕРХУ */
+}
+
+/* КНОПКА ВВЕРХУ */
 
 .aboutUs, .ourMenu {
     max-width: 1400px;
@@ -244,9 +255,11 @@ nav img {
     width: 100%;
     padding: 0;
 }
+
 .ourMenu-wrap {
     width: 100%;
 }
+
 .card {
     width: 300px;
     background-color: #fff;
@@ -305,9 +318,11 @@ nav img {
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
 }
+
 .card img {
     height: 250px;
 }
+
 .card:hover .card__body {
     height: 230px;
 }
@@ -387,6 +402,7 @@ nav img {
     height: 400px;
     align-items: flex-start;
 }
+
 .ourMenu h3, .ourMenu h2 {
     padding-left: 50px;
 }
@@ -406,6 +422,7 @@ nav img {
     position: relative;
     border-radius: 10px;
 }
+
 .our-team .picture {
     display: inline-block;
     height: 320px;
@@ -482,12 +499,15 @@ nav img {
     color: #1369ce;
     background-color: #f7f5ec;
 }
+
 .ourChefs .row {
     justify-content: space-between;
 }
+
 .ourChefs .row > div {
     width: 30%;
 }
+
 .contactUs {
     margin: 100px auto 0;
     width: 1424px;
@@ -498,37 +518,45 @@ nav img {
     justify-content: center;
     align-items: center;
 }
+
 .contactUs-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .contactUs-wrap {
     display: flex;
     height: 100%;
     color: white;
     font-size: 20px;
 }
+
 .contactUs h6 {
     color: white;
 }
+
 .container {
-    max-width:400px;
-    width:100%;
-    margin:0 auto;
-    position:relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
+
 .table-reservation-form {
     display: flex;
     align-items: center;
 }
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 #contact {
-    background:#F9F9F9;
-    padding:25px;
-    margin:50px 0;
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0;
 }
 
 #contact h3 {
@@ -539,9 +567,9 @@ nav img {
 }
 
 #contact h4 {
-    margin:5px 0 15px;
-    display:block;
-    font-size:13px;
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
 }
 
 fieldset {
@@ -553,65 +581,73 @@ fieldset {
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-    width:100%;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
 }
 
 #contact textarea {
-    height:100px;
-    max-width:100%;
-    resize:none;
+    height: 100px;
+    max-width: 100%;
+    resize: none;
 }
 
 #contact button[type="submit"] {
-    cursor:pointer;
-    width:100%;
-    border:none;
-    background:#0CF;
-    color:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    font-size:15px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 #contact button[type="submit"]:hover {
-    background:#09C;
-    -webkit-transition:background 0.3s ease-in-out;
-    -moz-transition:background 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 #contact input:focus, #contact textarea:focus {
-    outline:0;
-    border:1px solid #999;
+    outline: 0;
+    border: 1px solid #999;
 }
+
 ::-webkit-input-placeholder {
-    color:#888;
+    color: #888;
 }
+
 :-moz-placeholder {
-    color:#888;
+    color: #888;
 }
+
 ::-moz-placeholder {
-    color:#888;
+    color: #888;
 }
+
 :-ms-input-placeholder {
-    color:#888;
+    color: #888;
 }
+
 form #contact {
     margin-top: 105px;
 }
+
 .weekly-best-offers {
     width: 1400px;
     margin: 100px auto 0;
@@ -621,20 +657,24 @@ form #contact {
     display: flex;
     flex-direction: row;
 }
+
 .item-info img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
     border-radius: 10px;
 }
+
 .tab-item-description {
     display: flex;
     flex-direction: column;
 }
+
 .item-price {
     height: 70px;
     width: 70px;
 }
+
 .item-price h6 {
     width: 70px;
     height: 70px;
@@ -647,23 +687,29 @@ form #contact {
     font-weight: 700;
     color: #fff;
 }
+
 .list-left {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
 }
+
 .list-left > div, .list-right > div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .weekly-best-offers h2 {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .weekly-best-offers > div {
     justify-content: center;
 }
+
 footer {
     margin-top: 100px;
     background-color: royalblue;
@@ -674,29 +720,36 @@ footer {
     align-items: center;
     padding: 0 50px;
 }
+
 footer > div {
     width: 1300px;
     margin: 0 auto;
     display: flex;
 }
+
 footer div {
     align-self: center;
 }
+
 .socials {
-font-size: 30px;
+    font-size: 30px;
 }
+
 footer ul li a, footer ul li a:hover {
     color: white;
     text-decoration: none;
 }
+
 footer > div > div:nth-child(2) {
     display: flex;
     justify-content: center;
 }
+
 footer > div > div:last-child {
     display: flex;
     justify-content: flex-end;
 }
+
 #cookie-popup {
     position: fixed;
     z-index: 9999;
@@ -732,6 +785,106 @@ footer > div > div:last-child {
     background-color: #000;
     border: 4px solid royalblue;
 }
+
 #cookie-popup p:first-child {
     margin-bottom: 10px;
+}
+
+
+.dropdown_menu-9 {
+    animation: growOut 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+
+@keyframes growOut {
+    0% {
+        transform: scale(0)
+    }
+    80% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 2px solid #000;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before{
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after {
+    height: 2px;
+    top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    height: 2px;
+    transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    height: 2px;
+    transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    height: 2px;
+    border-color: transparent;
+}
+.dropdown-menu {
+    top: 30px;
+}
+a.dropdown_item-1 i {
+    font-size: 20px;
+    margin-left: 5px;
+    color: darkorange;
+}
+a.dropdown_item-2 i {
+    margin-left: 5px;
+    font-size: 20px;
+    color: limegreen;
+}
+.modal-img {
+    width: 100%;
+    height: 200px;
+    background: url("../img/caption.png") no-repeat bottom;
+}
+.modal {
+    font-family: sans-serif;
+}
+.input-children-checkbox input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    outline: none;
+}
+.input-children-checkbox input[type='checkbox']:focus {
+    outline: none;
+}
+
+.input-children-checkbox {
+    display: flex;
+    align-items: center;
 }
