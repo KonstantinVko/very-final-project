@@ -44,7 +44,7 @@
 
 body {
     height: 3000px;
-    font-family: "Century Gothic", sans-serif;
+    font-family: sans-serif;
     overflow-x: hidden;
 }
 
@@ -103,7 +103,6 @@ nav img {
 
 .top-banner {
     height: auto;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -990,6 +989,13 @@ a.dropdown_item-2 i {
     display: flex;
     justify-content: center;
 }
+.navbar-nav {
+    width: 400px;
+    justify-content: space-between;
+}
+#carouselExampleFade > div {
+    max-height: 700px;
+}
 @media all and (max-width: 1350px){
     .another-wrap {
         width: 98%;
@@ -1058,5 +1064,10 @@ a.dropdown_item-2 i {
     }
     .our-team .picture img {
         width: 60%;
+    }
+}
+@media all and (max-width: 992px) {
+    footer > div {
+        justify-content: space-between;
     }
 }
