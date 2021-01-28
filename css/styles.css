@@ -58,7 +58,6 @@ body {
     -webkit-box-shadow: -1px -2px 20px 9px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: -1px -2px 20px 9px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.53);
-
 }
 
 #navbarSupportedContent .nav-item a {
@@ -1165,6 +1164,7 @@ a.dropdown_item-2 i {
 
     .ourMenu-wrap h2 {
         align-self: center;
+        text-align: center;
         padding: 0;
     }
 
@@ -1201,14 +1201,65 @@ a.dropdown_item-2 i {
     .items-section article.card1 {
         min-width: 220px;
     }
+
     footer {
         height: 310px;
     }
+
     footer > div {
         height: 95%;
         flex-direction: column;
     }
+
     footer ul:last-child {
         padding: 0;
+    }
+
+    .items-section {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .items-section {
+        width: 100%;
+    }
+
+    .ourMenu h2 {
+        padding: 0 10px;
+    }
+
+    .ourChefs .row > div {
+        width: 70%;
+    }
+
+    .our-team .picture img {
+        width: 270px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #aboutus video {
+        height: 220px;
+    }
+
+    .items-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    article.card1 {
+        width: 95%;
+        margin-bottom: 20px;
+        min-height: 290px;
+    }
+    article.card1 img {
+        height: 300px;
+    }
+    .items-section .card1:nth-child(2), .items-section .card1:last-child {
+        margin-left: 0;
+    }
+    .ourMenu-wrap {
+        height: 1500px;
     }
 }
