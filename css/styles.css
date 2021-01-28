@@ -1276,4 +1276,12 @@ a.dropdown_item-2 i {
     .ourChefs .row > div {
         width: 90%;
 }
+    .tab-item-description {
+        height: auto;
+    }
+}
+@media all and (max-width: 440px){
+    .tab-item-description p {
+        display: none;
+    }
 }
