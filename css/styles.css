@@ -184,7 +184,7 @@ nav img {
 
 /* КНОПКА ВВЕРХУ */
 
-.aboutUs, .ourMenu {
+.aboutUs, .ourMenu, .block-contacts {
     max-width: 1400px;
     padding: 0 50px;
     margin: 100px auto 0;
@@ -192,13 +192,13 @@ nav img {
 
 }
 
-.aboutUs h3, .ourMenu h3, .ourChefs h3 {
+.aboutUs h3, .ourMenu h3, .ourChefs h3, .block-contacts h3 {
     display: flex;
     align-items: center;
     text-transform: uppercase;
 }
 
-.aboutUs h3:before, .ourMenu h3:before, .ourChefs h3:before {
+.aboutUs h3:before, .ourMenu h3:before, .ourChefs h3:before, .block-contacts h3:before {
     display: inline-block;
     content: ' ';
     width: 30px;
@@ -207,7 +207,7 @@ nav img {
     margin-right: 10px;
 }
 
-.aboutUs h2, .ourMenu h2, .ourChefs h2, .weekly-best-offers h2 {
+.aboutUs h2, .ourMenu h2, .ourChefs h2, .weekly-best-offers h2, .block-contacts h2 {
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 30px;
@@ -787,24 +787,6 @@ footer > div > div:last-child {
 }
 
 
-.dropdown_menu-9 {
-    animation: growOut 300ms ease-in-out forwards;
-    transform-origin: top center;
-}
-
-
-@keyframes growOut {
-    0% {
-        transform: scale(0)
-    }
-    80% {
-        transform: scale(1.1)
-    }
-    100% {
-        transform: scale(1)
-    }
-}
-
 .navbar-toggler {
     float: right;
     border: none;
@@ -923,7 +905,7 @@ a.dropdown_item-2 i {
 [type="checkbox"]:checked + label:after {
     content: '';
     position: absolute;
-    background: #0F4FE6;
+    background: #41a6e1;
 }
 
 [type="checkbox"]:not(:checked) + label:before,
@@ -935,7 +917,7 @@ a.dropdown_item-2 i {
     left: 0;
     top: -3px;
     transition: all .2s ease;
-    background: #0F4FE6;
+    background: #41a6e1;
 }
 
 [type="checkbox"]:not(:checked) + label:after,
@@ -951,7 +933,7 @@ a.dropdown_item-2 i {
 
 /* on checked */
 [type="checkbox"]:checked + label:before {
-    background: #0F4FE6;
+    background: #41a6e1;
 
 }
 
@@ -1018,6 +1000,160 @@ a.dropdown_item-2 i {
 
 #carouselExampleFade > div {
     max-height: 700px;
+}
+ul.drop-menu {
+    border: none;
+}
+
+ul.drop-menu li:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+ul.drop-menu li:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+ul.drop-menu li {
+    display: none;
+}
+ul.drop-menu li a {
+    border: none;
+}
+
+li:hover > ul.drop-menu li {
+    display: block;
+}
+
+li:hover > ul.drop-menu.menu-4 {
+    perspective: 1000px;
+}
+
+li:hover > ul.drop-menu.menu-4 li {
+    transform-origin: top center;
+    opacity: 0;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(1) {
+    animation-name: menu-4;
+    animation-delay: -150ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(2) {
+    animation-name: menu-4;
+    animation-delay: 0ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(3) {
+    animation-name: menu-4;
+    animation-delay: 150ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(4) {
+    animation-name: menu-4;
+    animation-delay: 300ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(5) {
+    animation-name: menu-4;
+    animation-delay: 450ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.drop-menu.menu-4 li:nth-child(6) {
+    animation-name: menu-4;
+    animation-delay: 600ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+button {
+    outline: 0;
+}
+button.active {
+    outline: 0;
+}
+.button-for-modal {
+    height: 60px;
+    font-size: 18px;
+}
+button.send {
+    border: 2px solid #fff;
+    color: black;
+    border-radius: 50px;
+    padding: 15px 80px;
+    background: #41a6e1;
+    position: relative;
+    top: 27px;
+    right: 29px;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+}
+button.send .text.active {
+    transform: translateY(-350%) scale(0);
+    transition: 0.35s cubic-bezier(0.34, -0.61, 1, 0.64);
+}
+button.send.active {
+    padding: 0 80px;
+    transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+}
+button.send .loader {
+    position: absolute;
+    width: calc(0% - 4px);
+    height: calc(100% - 4px);
+    background-color: orange;
+    left: 2px;
+    top: 2px;
+    border-radius: 50px;
+}
+button.send .loader.active {
+    width: calc(100% - 4px);
+    transition: 1.3s ease-in-out;
+    transition-delay: 0.5s;
+}
+button.send .done {
+    color: black;
+    margin-top: -25px;
+    transform: translateY(300%) scale(0);
+}
+button.send .done.active {
+    transform: translateY(0%) scale(1);
+    transition: 0.4s cubic-bezier(0.34, -0.61, 1, 0.64);
+}
+button.send.finished {
+    padding: 15px 80px;
+    transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+}
+
+
+
+
+@keyframes menu-4 {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    70% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 @media all and (max-width: 1350px) {
@@ -1188,6 +1324,7 @@ a.dropdown_item-2 i {
     .aboutUs {
         padding: 0 10px;
     }
+
     .about-us-wrap ul li:last-child {
         margin-right: 0;
     }
@@ -1239,6 +1376,7 @@ a.dropdown_item-2 i {
     .our-team .picture img {
         width: 270px;
     }
+
     .sticky-header .container-fluid {
         padding-right: 30px;
     }
@@ -1254,33 +1392,42 @@ a.dropdown_item-2 i {
         margin-bottom: 20px;
         min-height: 290px;
     }
+
     article.card1 img {
         height: 300px;
     }
+
     .items-section .card1:nth-child(2), .items-section .card1:last-child {
         margin-left: 0;
     }
+
     .ourMenu-wrap {
         justify-content: flex-start;
         height: 1500px;
     }
+
     .card__thumb {
         height: 280px;
     }
+
     .card__thumb:hover {
         height: auto;
     }
+
     .card__body p.card__description {
         font-size: 18px;
     }
+
     .ourChefs .row > div {
         width: 90%;
-}
+    }
+
     .tab-item-description {
         height: auto;
     }
 }
-@media all and (max-width: 440px){
+
+@media all and (max-width: 440px) {
     .tab-item-description p {
         display: none;
     }

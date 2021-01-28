@@ -19,13 +19,20 @@
             src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
-    <title>hey</title>
+    <title>KonstantinVKO Restaurant</title>
 </head>
 <body>
+
+
+
+
+
+
 <header>
+    <div id="top"></div>
     <nav class="navbar navbar-expand-md navbar-">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/my-logo-pog.png" width="250px" alt="klassy logo"></a>
+            <a class="navbar-brand" href="#top"><img src="img/my-logo-pog.png" width="250px" alt="klassy logo"></a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +44,11 @@
                         <a class="nav-link active" aria-current="page" href="#aboutus">О нас</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown23" href="#menu" role="button" aria-expanded="false" data-bs-target="#menu">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown23" role="button" aria-expanded="false" data-bs-target="#menu">
                             Меню</a>
-                        <ul class="dropdown-menu dropdown_menu dropdown_menu--animated dropdown_menu-9"  aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu drop-menu menu-4"  aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item dropdown_item-1" href="#menu">Наши лучшие блюда <i class="fas fa-cheese"></i></a></li>
-                            <li><a class="dropdown-item dropdown_item-2" href="#best-offers">Специальные предложения <i class="far fa-calendar-check"></i></a></li>
+                            <li><a class="dropdown-item dropdown_item-2" href="best-offers">Специальные предложения <i class="far fa-calendar-check"></i></a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,7 +56,7 @@
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Услуги
                         </a>
-                        <ul class="dropdown-menu dropdown-menu dropdown_menu dropdown_menu--animated dropdown_menu-9" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu drop-menu menu-4" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
@@ -59,17 +66,22 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                        <a class="nav-link active" aria-current="page" href="contact-us.html">Контакты</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+
+
+
+
 <header class="sticky-header">
     <nav class="navbar navbar-expand-md navbar-">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/my-logo-pog.png" width="250px" alt="klassy logo"></a>
+            <a class="navbar-brand" href="#top"><img src="img/my-logo-pog.png" width="250px" alt="klassy logo"></a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -81,11 +93,11 @@
                         <a class="nav-link active" aria-current="page" href="#aboutus">О нас</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown23" href="#menu" role="button" aria-expanded="false" data-bs-target="#menu">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown23" role="button" aria-expanded="false" data-bs-target="#menu">
                             Меню</a>
-                        <ul class="dropdown-menu dropdown_menu dropdown_menu--animated dropdown_menu-9"  aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu drop-menu menu-4"  aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item dropdown_item-1" href="#menu">Наши лучшие блюда <i class="fas fa-cheese"></i></a></li>
-                            <li><a class="dropdown-item dropdown_item-2" href="#best-offers">Специальные предложения <i class="far fa-calendar-check"></i></a></li>
+                            <li><a class="dropdown-item dropdown_item-2" href="index.html#best-offers">Специальные предложения <i class="far fa-calendar-check"></i></a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -93,7 +105,7 @@
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Услуги
                         </a>
-                        <ul class="dropdown-menu dropdown-menu dropdown_menu dropdown_menu--animated dropdown_menu-9" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu drop-menu menu-4" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
@@ -103,7 +115,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                        <a class="nav-link active" aria-current="page" href="contact-us.html">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -149,10 +161,13 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                        aria-label="Close">Закрыть
+                                <div class="button-for-modal">
+                                <button class="send">
+                                    <div class="text">Отправить заявку</div>
+                                    <div class="loader"></div>
+                                    <div class="done">Спасибо! Мы с вами свяжемся</div>
                                 </button>
-                                <button type="button" class="btn btn-primary">Отправить</button>
+                                </div>
                                 <div class="modal-img"></div>
                             </div>
                         </div>
@@ -183,11 +198,12 @@
                 </a>
             </div>
         </div>
+        <div id="aboutus"></div>
     </div>
 </div>
 
 
-<div class="aboutUs" id="aboutus">
+<div class="aboutUs">
     <div class="about-us-wrap">
         <h3>О нас</h3>
         <h2>Оставляем только вкусные воспоминания</h2>
@@ -203,7 +219,7 @@
             <li></li>
         </ul>
     </div>
-    <video controls="controls" poster="img/blur-poster-vid.jpg">
+    <video class="responsive-video" controls="controls" poster="img/blur-poster-vid.jpg">
         <source src="vid/vid.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         <a href="vid/vid.mp4">Скачайте видео</a>.
     </video>
@@ -220,7 +236,7 @@
         <div class="items-section">
             <article class="card1">
                 <header class="card__thumb">
-                    <a href="#"><img src="img/pud-.jpg" alt="tab-item"></a>
+                    <a><img src="img/pud-.jpg" alt="tab-item"></a>
                 </header>
                 <div class="card__body">
                     <h6 class="card__title"><a href="#">Шоколадный пудинг Фаберже</a></h6>
@@ -230,7 +246,7 @@
             </article>
             <article class="card1">
                 <header class="card__thumb">
-                    <a href="#"><img src="img/pic-2.jpg" alt="tab-item"></a>
+                    <a><img src="img/pic-2.jpg" alt="tab-item"></a>
                 </header>
                 <div class="card__body">
                     <h6 class="card__title"><a href="#">«Frrrozen Haute Chocolate»</a></h6>
@@ -240,7 +256,7 @@
             </article>
             <article class="card1">
                 <header class="card__thumb">
-                    <a href="#"><img src="img/ribak.jpg" alt="tab-item"></a>
+                    <a><img src="img/ribak.jpg" alt="tab-item"></a>
                 </header>
                 <div class="card__body">
                     <h6 class="card__title"><a href="#">Рыбак на ходулях</a></h6>
@@ -250,7 +266,7 @@
             </article>
             <article class="card1">
                 <header class="card__thumb">
-                    <a href="#"><img src="img/pirog.jpg" alt="tab-item"></a>
+                    <a><img src="img/pirog.jpg" alt="tab-item"></a>
                 </header>
                 <div class="card__body">
                     <h6 class="card__title"><a href="#">Шикарный пирог</a></h6>
@@ -302,6 +318,7 @@
             </div>
         </div>
     </div>
+    <div  id="best-offers"></div>
 </div>
 
 
@@ -341,7 +358,7 @@
 </div> -->
 
 <div class="another-wrap">
-    <div class="weekly-best-offers" id="best-offers">
+    <div class="weekly-best-offers">
         <h2>Специальные предложения на этой неделе</h2>
         <div class="weekly-best-offers-wrap">
             <div class="list-left">
@@ -498,5 +515,19 @@ $(document).scroll(function () {
         testAnim(anim);
     })
 </script>
+<script>
+    $(".send").on('click', function(){
+        $(".text").addClass("active");
+        $(".send").addClass("active");
+        $(".loader").addClass("active");
+        $(".send").delay(1700).queue(function(){
+            $(this).addClass("finished").clearQueue();
+        });
+
+        $(".done").delay(1600).queue(function(){
+            $(this).addClass("active").clearQueue();
+        });
+    })
+</script> <!-- BUTTON SEND-->
 </body>
 </html>
