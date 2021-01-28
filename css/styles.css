@@ -1243,13 +1243,8 @@ a.dropdown_item-2 i {
         height: 220px;
     }
 
-    .items-section {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
     article.card1 {
-        width: 95%;
+        width: 80%;
         margin-bottom: 20px;
         min-height: 290px;
     }
@@ -1260,6 +1255,19 @@ a.dropdown_item-2 i {
         margin-left: 0;
     }
     .ourMenu-wrap {
+        justify-content: flex-start;
         height: 1500px;
     }
+    .card__thumb {
+        height: 280px;
+    }
+    .card__thumb:hover {
+        height: auto;
+    }
+    .card__body p.card__description {
+        font-size: 18px;
+    }
+    .ourChefs .row > div {
+        width: 90%;
+}
 }
