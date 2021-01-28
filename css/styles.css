@@ -1185,6 +1185,9 @@ a.dropdown_item-2 i {
 }
 
 @media all and (max-width: 768px) {
+    .aboutUs {
+        padding: 0 10px;
+    }
     .about-us-wrap ul li:last-child {
         margin-right: 0;
     }
@@ -1235,6 +1238,9 @@ a.dropdown_item-2 i {
 
     .our-team .picture img {
         width: 270px;
+    }
+    .sticky-header .container-fluid {
+        padding-right: 30px;
     }
 }
 
