@@ -1,5 +1,16 @@
-let array = [78,56,232,12,8];
+function getSum (a, b) {
+    if (a === b) {
+        return a;
+    }
+    else {
+        function range(start, end) {
+            return Array(end - start + 1). fill(). map((_, idx) => start + idx)
+        }
+        var arrayRanged = range(a, b);
 
-function minOfArray(array) {
-    return Math.min(array);
+        var sum = arrayRanged.reduce(function(a, b){
+            return a + b;
+        }, 0);
+        return sum;
+    }
 }

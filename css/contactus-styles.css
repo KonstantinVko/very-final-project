@@ -164,13 +164,27 @@ button.send {
     color: black;
     text-decoration: none;
 }
+.map-div {
+    width: 70%;
+}
+.block-form {
+    width: 70%;
+    margin: 100px auto;
+}
 @media screen and (max-width: 959px) and (min-width: 768px) {
     #parallax-world-of-ugg .block {
         padding: 40px;
         width: 620px;
     }
 }
-
+@media all and (max-width: 980px){
+    .contacts-wrap {
+        flex-direction: column;
+    }
+    .map-div {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 767px) {
     #parallax-world-of-ugg .block {
         padding: 30px;
@@ -190,7 +204,11 @@ button.send {
         padding-bottom: 100px;
     }
 }
-
+@media all and (max-width: 720px){
+    .block-form {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 479px) {
     #parallax-world-of-ugg .block {
         padding: 30px 15px;
