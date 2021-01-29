@@ -5,25 +5,25 @@
     width: 100%;
 }
 .img-dr {
-    background: url("../img/slide-birthday.jpg");
+    background: url("../img/slide-birthday.jpg") center;
     height: 500px;
     width: 100%;
     background-size: cover;
 }
 .img-dr1 {
-    background: url("../img/korporat.webp");
+    background: url("../img/korporat.webp") center;
     height: 500px;
     width: 100%;
     background-size: cover;
 }
 .img-dr2 {
-    background: url("../img/svadba.jpg");
+    background: url("../img/svadba.jpg") center;
     height: 500px;
     width: 100%;
     background-size: cover;
 }
 .img-dr3 {
-    background: url("../img/themed-party.jpg");
+    background: url("../img/themed-party.jpg") center;
     height: 500px;
     width: 100%;
     background-size: cover;
