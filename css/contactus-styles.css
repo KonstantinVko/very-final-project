@@ -170,6 +170,7 @@ button.send {
 .block-form {
     width: 70%;
     margin: 100px auto;
+    max-width: 1000px;
 }
 @media screen and (max-width: 959px) and (min-width: 768px) {
     #parallax-world-of-ugg .block {
