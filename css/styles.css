@@ -1382,6 +1382,21 @@ button.send.finished {
     }
 }
 
+@media all and (max-width: 510px){
+    .button-for-modal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button.send {
+        right: unset;
+    }
+    button.send, button.send.finished {
+        padding: 15px 30px;
+    }
+}
+
 @media all and (max-width: 500px) {
     #aboutus video {
         height: 220px;
@@ -1426,9 +1441,13 @@ button.send.finished {
         height: auto;
     }
 }
-
 @media all and (max-width: 440px) {
     .tab-item-description p {
         display: none;
+    }
+}
+@media all and (max-width: 392px){
+    button.send, button.send.finished {
+        padding: 10px 15px;
     }
 }
